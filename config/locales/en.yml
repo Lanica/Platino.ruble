@@ -1,0 +1,7 @@
+en:
+  bundle_name: 'Platino SDK'
+  bundle_description: 'Support for the Platino Game Engine by Lanica.'
+  api_reference: 'API Reference'
+  developer_center: 'Titanium Mobile Developer Center'
+  platino_application: "Platino Application"
+  platino_application_desc: "A single window application with a Platino-ready view - a blank canvas."
