@@ -5,6 +5,7 @@ bundle 'Platino SDK' do |bundle|
   bundle.copyright = "Copyright 2013 Lanica, Inc."
   bundle.description = t(:bundle_description)
   bundle.display_name = t(:bundle_name)
+  bundle.repository = "git://github.com/Lanica/Platino.ruble.git"
 
   bundle.menu t(:bundle_name) do |main_menu|
     main_menu.command 'Generate Scene Scaffold'
