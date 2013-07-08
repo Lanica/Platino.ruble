@@ -12,7 +12,6 @@ bundle 'Platino SDK' do |bundle|
     main_menu.menu 'require() ...' do |require_menu|
       require_menu.command 'Platino'
       require_menu.command 'Box2D (physics)'
-      require_menu.command 'Chipmunk (physics)'
     end
     main_menu.menu 'API Snippets' do |api_menu|
       api_menu.menu 'GameView' do |m|

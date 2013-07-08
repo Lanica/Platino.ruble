@@ -2,33 +2,31 @@ with_defaults :scope => 'meta.project.com.appcelerator.titanium.mobile source.js
   snippet 'Generate Scene Scaffold' do |s|
     s.trigger = 'gs'
     s.expansion =
-"(function() {
-\tvar platino = require('co.lanica.platino');
+"var platino = require('co.lanica.platino');
 
-\tvar ${1:SceneName} = function(window, game) {
-\t\tvar scene = platino.createScene();
+var ${1:SceneName} = function(window, game) {
+\tvar scene = platino.createScene();
   
-\t\tvar onSceneActivated = function(e) {
+\tvar onSceneActivated = function(e) {
 
-\t\t\t// ---- create sprites, add listeners, etc. ----
+\t\t// ---- create sprites, add listeners, etc. ----
 
-\t\t\t${0:TM_SELECTED_TEXT}
+\t\t${0:TM_SELECTED_TEXT}
 
-\t\t};
-
-\t\tvar onSceneDeactivated = function(e) {
-
-\t\t\t// ---- remove sprites, listeners, etc. ----
-
-\t\t};
-
-\t\tscene.addEventListener('activated', onSceneActivated);
-\t\tscene.addEventListener('deactivated', onSceneDeactivated);
-\t\treturn scene;
 \t};
 
-\tmodule.exports = ${1:SceneName};
-}).call(this);
+\tvar onSceneDeactivated = function(e) {
+
+\t\t// ---- remove sprites, listeners, etc. ----
+
+\t};
+
+\tscene.addEventListener('activated', onSceneActivated);
+\tscene.addEventListener('deactivated', onSceneDeactivated);
+\treturn scene;
+};
+
+module.exports = ${1:SceneName};
 "
   end
 
