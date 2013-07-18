@@ -33,10 +33,10 @@ module.exports = ${1:SceneName};
   snippet 'New Module from Template' do |s|
     s.trigger = 'module'
     s.expansion = 
-"function ${1:ModuleName}() {
+"var ${1:ModuleName} = (function() {
 
 \t// Constructor
-\t${1:ModuleName} = function() {
+\tfunction ${1:ModuleName}() {
 
 \t\t${0:TM_SELECTED_TEXT}
 
@@ -48,7 +48,7 @@ module.exports = ${1:SceneName};
 \t};
 
 \treturn ${1:ModuleName};
-};
+}).call(this);
 
 module.exports = ${1:ModuleName};
 "
