@@ -21,6 +21,14 @@ var ${1:SceneName} = function(window, game) {
 
 \t};
 
+\t// called when user presses the Android hardware back button
+\t// when this scene is the current scene
+\tscene.backButtonHandler = function() {
+
+\t\t// ---- your code here ----
+
+\t};
+
 \tscene.addEventListener('activated', onSceneActivated);
 \tscene.addEventListener('deactivated', onSceneDeactivated);
 \treturn scene;
